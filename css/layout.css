@@ -530,7 +530,7 @@ html {
         [Footer]
   ------------------------------------------------------------------*/
   .footer .footer-logo {
-    width: 100px;
+    width: 130px;
     height: auto;
   }
   
@@ -646,7 +646,7 @@ html {
   
   .header .logo-wrap {
     display: inline-block;
-    padding: 15px 0;
+    padding: 5px 0;
   }
   
   .header .logo-wrap:focus, .header .logo-wrap:hover {
@@ -1065,9 +1065,8 @@ html {
   .color-white {
     color: rgb(232, 236, 236) !important;
     font-size: 3.5rem;
-    text-shadow: 2px 2px 5px rgb(7, 7, 7);
-   font-variant: inherit;
-   font-stretch: extra-expanded;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-shadow: 2px 2px 5px rgb(74, 42, 187);
   }
 
   .yazi {
@@ -1552,3 +1551,10 @@ html {
     height: 300px !important;
   }
   
+
+
+  .ok {
+  font-size: 1.5em;
+  color: #0f0f0f;
+  
+  }
