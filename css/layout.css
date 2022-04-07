@@ -1064,9 +1064,14 @@ html {
   
   .color-white {
     color: rgb(232, 236, 236) !important;
-    font-size: large;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgb(7, 7, 7);
    font-variant: inherit;
    font-stretch: extra-expanded;
+  }
+
+  .yazi {
+    font-size: large;
   }
   
   .color-heading {
