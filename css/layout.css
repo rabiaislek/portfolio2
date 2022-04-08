@@ -1558,3 +1558,35 @@ html {
   color: #0f0f0f;
   
   }
+
+  .text2 {
+    font-size: 6em;
+  }
+  
+  .text_element--border-effect {
+      border-bottom: 3px solid yellow;
+      transition: border-color .4s ease-in-out;
+  }
+  
+  .typed-cursor{
+      opacity: 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-webkit-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }

@@ -27,12 +27,12 @@ var GoogleMap = function() {
             }];
 
             // Create a map object and specify the DOM element for display.
-            var NewYork = new google.maps.LatLng(41.850, -73.961);
+            var Turkey = new google.maps.LatLng(32.8442835,39.9323346);
             var map = new google.maps.Map(document.getElementById('map'), {
-                center: NewYork,
+                center: Turkey,
                 styles: styleArray,
                 scrollwheel: false,
-                zoom: 6,
+                zoom: 11,
                 streetViewControl: false,
                 mapTypeControl: false,
                 zoomControl: false,
@@ -40,12 +40,12 @@ var GoogleMap = function() {
             });
 
             var coordInfoWindow = new google.maps.InfoWindow();
-            coordInfoWindow.setContent(createInfoWindowContent(NewYork, map.getZoom()));
-            coordInfoWindow.setPosition(NewYork);
+            coordInfoWindow.setContent(createInfoWindowContent(Turkey, map.getZoom()));
+            coordInfoWindow.setPosition(Turkey);
             coordInfoWindow.open(map);
 
             map.addListener('zoom_changed', function() {
-                coordInfoWindow.setContent(createInfoWindowContent(NewYork, map.getZoom()));
+                coordInfoWindow.setContent(createInfoWindowContent(Turkey, map.getZoom()));
                 coordInfoWindow.open(map);
             });
 
@@ -65,7 +65,7 @@ var GoogleMap = function() {
                     Math.floor(worldCoordinate.y * scale / TILE_SIZE));
 
                 return [
-                    '277 Bedford Avenue, <br> Brooklyn, NY 11211, <br> New York, USA'
+                     '277 Bedford Avenue, <br> Brooklyn, NY 11211, <br> New York, USA'
                 ].join('<br>');
             }
 
